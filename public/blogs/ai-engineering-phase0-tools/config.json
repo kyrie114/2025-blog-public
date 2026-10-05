@@ -1,0 +1,12 @@
+{
+  "title": "Phase0 工具全书",
+  "tags": [
+    "AI工程从零",
+    "工具",
+    "草稿"
+  ],
+  "date": "2026-10-05T21:00",
+  "summary": "Git / GPU / API / Jupyter / venv / Docker 等工具地图：干什么用 + 什么时候用到。",
+  "hidden": false,
+  "category": "AI工程从零"
+}

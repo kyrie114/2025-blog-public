@@ -1,1 +1,41 @@
-[]
+[
+  {
+    "slug": "ai-engineering-linalg-intuition",
+    "title": "线性代数直觉速记",
+    "tags": [
+      "AI工程从零",
+      "线性代数",
+      "草稿"
+    ],
+    "date": "2026-10-05T23:00",
+    "summary": "向量、矩阵与 y=Wx；点积、秩与投影的直觉速记。",
+    "hidden": false,
+    "category": "AI工程从零"
+  },
+  {
+    "slug": "ai-engineering-day1-env",
+    "title": "Day1 开发环境",
+    "tags": [
+      "AI工程从零",
+      "环境",
+      "草稿"
+    ],
+    "date": "2026-10-05T22:00",
+    "summary": "四层环境栈、uv / 预检用法，以及最小可跑通路径。",
+    "hidden": false,
+    "category": "AI工程从零"
+  },
+  {
+    "slug": "ai-engineering-phase0-tools",
+    "title": "Phase0 工具全书",
+    "tags": [
+      "AI工程从零",
+      "工具",
+      "草稿"
+    ],
+    "date": "2026-10-05T21:00",
+    "summary": "Git / GPU / API / Jupyter / venv / Docker 等工具地图：干什么用 + 什么时候用到。",
+    "hidden": false,
+    "category": "AI工程从零"
+  }
+]
