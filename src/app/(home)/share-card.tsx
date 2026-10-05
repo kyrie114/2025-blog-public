@@ -27,6 +27,10 @@ export default function ShareCard() {
 	const socialButtonsStyles = cardStyles.socialButtons
 
 	useEffect(() => {
+		if (!shareList.length) {
+			setRandomItem(null)
+			return
+		}
 		const randomIndex = Math.floor(Math.random() * shareList.length)
 		setRandomItem(shareList[randomIndex])
 	}, [])
