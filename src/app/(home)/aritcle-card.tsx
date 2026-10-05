@@ -7,6 +7,11 @@ import dayjs from 'dayjs'
 import Link from 'next/link'
 import { HomeDraggableLayer } from './home-draggable-layer'
 
+const CONTENT_LINES = [
+	{ label: 'AI', title: 'AI工程从零' },
+	{ label: '矩阵', title: '矩阵方法跟读' }
+] as const
+
 export default function ArticleCard() {
 	const center = useCenterStore()
 	const { cardStyles, siteContent } = useConfigStore()
@@ -52,9 +57,17 @@ export default function ArticleCard() {
 						</div>
 					</Link>
 				) : (
-					<div className='flex h-[60px] items-center justify-center'>
-						<span className='text-secondary text-xs'>暂无文章</span>
-					</div>
+					<Link href='/blog' className='block space-y-2.5 transition-opacity hover:opacity-80'>
+						<p className='text-secondary text-xs leading-relaxed'>写作筹备中 · 两条内容线</p>
+						<ul className='space-y-1.5'>
+							{CONTENT_LINES.map(line => (
+								<li key={line.title} className='flex items-center gap-2 text-xs'>
+									<span className='bg-brand/15 text-brand shrink-0 rounded-md px-1.5 py-0.5 text-[10px] font-medium'>{line.label}</span>
+									<span className='font-medium'>{line.title}</span>
+								</li>
+							))}
+						</ul>
+					</Link>
 				)}
 			</Card>
 		</HomeDraggableLayer>

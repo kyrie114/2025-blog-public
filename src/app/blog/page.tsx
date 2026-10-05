@@ -13,7 +13,6 @@ import ShortLineSVG from '@/svgs/short-line.svg'
 import { useBlogIndex, type BlogIndexItem } from '@/hooks/use-blog-index'
 import { useCategories } from '@/hooks/use-categories'
 import { useReadArticles } from '@/hooks/use-read-articles'
-import JuejinSVG from '@/svgs/juejin.svg'
 import { useAuthStore } from '@/hooks/use-auth'
 import { useConfigStore } from '@/app/(home)/stores/config-store'
 import { readFileAsText } from '@/lib/file-utils'
@@ -456,18 +455,27 @@ export default function BlogPage() {
 							animate={{ opacity: 1, scale: 1 }}
 							whileHover={{ scale: 1.05 }}
 							whileTap={{ scale: 0.95 }}
-							href='https://juejin.cn/user/2427311675422382/posts'
+							href='https://github.com/kyrie114'
 							target='_blank'
+							rel='noopener noreferrer'
 							className='card text-secondary static inline-flex items-center gap-2 rounded-xl px-4 py-2 text-xs'>
-							<JuejinSVG className='h-4 w-4' />
-							更多
+							更多 · GitHub
 						</motion.a>
 					</div>
 				)}
 			</div>
 
 			<div className='pt-12'>
-				{!loading && items.length === 0 && <div className='text-secondary py-6 text-center text-sm'>暂无文章</div>}
+				{!loading && items.length === 0 && (
+					<div className='card mx-auto max-w-md space-y-4 px-8 py-10 text-center'>
+						<p className='text-sm font-medium'>个人分享筹备中</p>
+						<p className='text-secondary text-xs leading-relaxed'>两条内容线并行推进，文章稍后更新</p>
+						<div className='flex flex-wrap justify-center gap-2'>
+							<span className='rounded-full border bg-white/55 px-3 py-1 text-xs font-medium'>AI工程从零</span>
+							<span className='rounded-full border bg-white/55 px-3 py-1 text-xs font-medium'>矩阵方法跟读</span>
+						</div>
+					</div>
+				)}
 				{loading && <div className='text-secondary py-6 text-center text-sm'>加载中...</div>}
 			</div>
 

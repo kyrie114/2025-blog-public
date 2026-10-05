@@ -63,8 +63,9 @@ export default function GridView({ shares, isEditMode = false, onUpdate, onDelet
 			</div>
 
 			{filteredShares.length === 0 && (
-				<div className='mt-12 text-center text-gray-500'>
-					<p>没有找到相关资源</p>
+				<div className='card mx-auto mt-12 max-w-md space-y-3 px-8 py-10 text-center'>
+					<p className='text-sm font-medium'>推荐分享筹备中</p>
+					<p className='text-secondary text-xs leading-relaxed'>先看两条内容线：AI工程从零 / 矩阵方法跟读</p>
 				</div>
 			)}
 		</div>

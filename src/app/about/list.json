@@ -1,5 +1,5 @@
 {
 	"title": "关于 kyrie",
-	"description": "个人分享：AI工程从零 × 矩阵方法跟读",
+	"description": "kyrie 的个人分享 · AI工程从零 / 矩阵方法跟读",
 	"content": "这里是 **kyrie** 的个人博客。\n\n两条内容线并行：\n\n- **AI工程从零**：从工程实践出发，把 AI 相关能力拆成可落地的小步骤\n- **矩阵方法跟读**：跟读刘笑嶂《机器学习的矩阵方法》，用矩阵视角打基础\n\n文风：教学向、干货短打。\n\nGitHub：[@kyrie114](https://github.com/kyrie114)"
 }
