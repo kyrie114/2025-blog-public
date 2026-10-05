@@ -4,8 +4,6 @@ import { useConfigStore } from './stores/config-store'
 import { HomeDraggableLayer } from './home-draggable-layer'
 import Link from 'next/link'
 
-const CONTENT_LINES = ['AI工程从零', '矩阵方法跟读'] as const
-
 function getGreeting() {
 	const hour = new Date().getHours()
 
@@ -55,16 +53,6 @@ export default function HiCard() {
 				<h1 className='font-averia mt-3 text-2xl'>
 					{greeting} <br /> I'm <span className='text-linear text-[32px]'>{username}</span> , Nice to <br /> meet you!
 				</h1>
-				<div className='mt-3 px-4'>
-					<p className='text-secondary text-xs tracking-wide'>个人分享</p>
-					<div className='mt-2 flex flex-wrap items-center justify-center gap-2'>
-						{CONTENT_LINES.map(line => (
-							<span key={line} className='rounded-full border bg-white/55 px-3 py-1 text-xs font-medium backdrop-blur-sm'>
-								{line}
-							</span>
-						))}
-					</div>
-				</div>
 			</Card>
 		</HomeDraggableLayer>
 	)
